@@ -1,0 +1,21 @@
+    .embeddedMessagingConversationButton{ display:none !important;}
+
+       .embedded-messaging > .embeddedMessagingFrame[class~="isMaximized"]{ bottom:25px !important;}
+
+       #launchChatButton{
+       	position: fixed;
+    bottom: 25px;
+    right: 30px;
+    outline: 0;
+    <!--box-shadow: 2px 2px 5px 0 rgba(45,45,45,0.5);-->
+    text-align: center;
+    overflow: hidden;
+    pointer-events: all;
+    cursor: pointer;
+    display: block;
+    line-height: normal;
+    padding: 0;
+    margin: 0;
+    font-size: var(--eswIconFontSize, 16px);
+    <!--box-sizing: border-box;-->
+       }
