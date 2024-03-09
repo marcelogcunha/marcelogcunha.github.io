@@ -1,4 +1,4 @@
-function initEmbeddedMessaging() {
+
         try {
 			embeddedservice_bootstrap.settings.language = 'en_US'; // For example, enter 'en' or 'en-US'
 
@@ -13,4 +13,4 @@ function initEmbeddedMessaging() {
 		} catch (err) {
 			console.error('Error loading Embedded Messaging: ', err);
 		}
-    };
+
