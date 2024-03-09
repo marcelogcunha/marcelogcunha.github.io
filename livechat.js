@@ -15,3 +15,5 @@ function initEmbeddedMessaging() {
 		}
 
 }
+
+initEmbeddedMessaging();
