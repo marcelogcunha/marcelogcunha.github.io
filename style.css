@@ -1,4 +1,4 @@
-    .embeddedMessagingConversationButton{ display:none !important;}
+    /*.embeddedMessagingConversationButton{ display:none !important;}*/
 
        .embedded-messaging > .embeddedMessagingFrame[class~="isMaximized"]{ bottom:25px !important;}
 
