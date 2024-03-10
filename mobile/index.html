@@ -7,7 +7,12 @@
     
   </head>
   <body>
-	  
+	  <script>
+		  function launchChat(){
+			  embeddedservice_bootstrap.utilAPI.launchChat();
+		  }
+	  </script>
+
 	  <script type='text/javascript' onload='launchChat()'>
 	function initEmbeddedMessaging() {
 		try {
@@ -28,12 +33,7 @@
 	};
 </script>
 	  <script type='text/javascript' src='https://valeocare4u--sccp2dev.sandbox.my.site.com/ESWValeoLiveChatExtern1710106536106/assets/js/bootstrap.min.js' onload='initEmbeddedMessaging()'></script>
-	  <script>
-		  function launchChat(){
-			  embeddedservice_bootstrap.utilAPI.launchChat();
-		  }
-	  </script>
-
+	  
 
   </body>
 </html>
