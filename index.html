@@ -2,29 +2,27 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
-	 
-
-    
-    
-	 
 	  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
     <title>Valeo Live Chat</title>
-    <!-- <link rel="stylesheet" href="style.css"> -->
-	  
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
-	<h1>VALEO LIVE CHAT</h1>
-	  <script type='text/javascript' src='https://valeocare4u--sccp2dev.sandbox.my.site.com/ESWValeoLiveChat1708964206329/assets/js/bootstrap.min.js'></script>
-	  <script type='text/javascript' src='livechat.js'></script>
-	 
+	  <h1>VALEO LIVE CHAT</h1>
 
-	
-
-
-
+    <template if:false={chatLoaded}>
+      <lightning-spinner alternative-text="Loading"></lightning-spinner>
+    </template>
+    <template if:true={chatLoaded}>
+      <a id="launchChatButton" onclick="launchChat()"><img src='/valeolivechat/assets/valeoLiveChatIcon.png'></img></a>
+    </template>
+    
+    
+    <script type='text/javascript' src='https://valeocare4u--sccp2dev.sandbox.my.site.com/ESWValeoLiveChannelExt1710018844438/assets/js/bootstrap.min.js'></script>
+    <script type='text/javascript' src='livechat.js'></script>
+    <script>
+      function launchChat() {
+        embeddedservice_bootstrap.utilAPI.launchChat();
+      }
+    </script>
   </body>
-	
-
-
 </html>
-
