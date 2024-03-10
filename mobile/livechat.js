@@ -1,4 +1,8 @@
-
+window.addEventListener("onEmbeddedMessagingReady", () => {
+    console.log("Received the onEmbeddedMessagingReady event…");
+  
+    embeddedservice_bootstrap.utilAPI.launchChat();
+  });
 function initEmbeddedMessaging() {
 		try {
 			embeddedservice_bootstrap.settings.language = 'en_US'; // For example, enter 'en' or 'en-US'
