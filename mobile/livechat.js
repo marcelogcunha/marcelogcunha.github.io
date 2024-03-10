@@ -12,7 +12,7 @@ function initEmbeddedMessaging() {
 					scrt2URL: 'https://valeocare4u--sccp2dev.sandbox.my.salesforce-scrt.com'
 				}
 			);
-			embeddedservice_bootstrap.utilAPI.launchChat();
+			
 		} catch (err) {
 			console.error('Error loading Embedded Messaging: ', err);
 		}
