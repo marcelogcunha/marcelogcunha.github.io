@@ -1,7 +1,7 @@
 function initEmbeddedMessaging() {
 		try {
 			embeddedservice_bootstrap.settings.language = 'en_US'; // For example, enter 'en' or 'en-US'
-			 embeddedservice_bootstrap.utilAPI.launchChat();
+			 
 
 			embeddedservice_bootstrap.init(
 				'00D3N000000HTnt',
@@ -14,6 +14,7 @@ function initEmbeddedMessaging() {
 			
 		} catch (err) {
 			console.error('Error loading Embedded Messaging: ', err);
-		}
+		} finally{ embeddedservice_bootstrap.utilAPI.launchChat(); }
+			
 	};
 initEmbeddedMessaging();
