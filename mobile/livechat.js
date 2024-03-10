@@ -16,3 +16,4 @@ function initEmbeddedMessaging() {
 			console.error('Error loading Embedded Messaging: ', err);
 		}
 	};
+initEmbeddedMessaging();
