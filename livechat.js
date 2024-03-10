@@ -12,8 +12,8 @@ function initEmbeddedMessaging() {
 
       embeddedservice_bootstrap.init(
         '00D3N000000HTnt',
-        'Valeo_Live_Channel_External',
-        'https://valeocare4u--sccp2dev.sandbox.my.site.com/ESWValeoLiveChannelExt1710018844438',
+        'Valeo_Live_Chat_External_Github_Pages',
+		'https://valeocare4u--sccp2dev.sandbox.my.site.com/ESWValeoLiveChatExtern1710104728631',
         {
           scrt2URL: 'https://valeocare4u--sccp2dev.sandbox.my.salesforce-scrt.com'
         }
