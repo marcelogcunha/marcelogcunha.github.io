@@ -35,10 +35,10 @@ function initEmbeddedMessaging() {
 // Listen for messages from the iframe
 window.addEventListener('message', (event) => {
     // Check the origin of the message to ensure it's coming from a trusted source
-    /*if (event.origin !== 'https://marcelogcunha.github.io') {
+    if (event.origin !== 'https://valeocare4u--sccp2dev.sandbox.my.site.com') {
 	    console.log('github console.log - event.origin = ', event.origin);
         return;
-    }*/
+    }
 
     // Check the message sent by the iframe
     if (event.data === 'getURLParams') {
