@@ -36,6 +36,7 @@ function initEmbeddedMessaging() {
 window.addEventListener('message', (event) => {
     // Check the origin of the message to ensure it's coming from a trusted source
     if (event.origin !== 'https://marcelogcunha.github.io') {
+	    console.log('github console.log - event.origin = ', event.origin);
         return;
     }
 
