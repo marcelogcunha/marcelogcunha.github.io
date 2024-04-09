@@ -31,6 +31,26 @@ function initEmbeddedMessaging() {
   }
 
   initEmbeddedMessaging();
+
+// Listen for messages from the iframe
+window.addEventListener('message', (event) => {
+    // Check the origin of the message to ensure it's coming from a trusted source
+    if (event.origin !== 'https://marcelogcunha.github.io') {
+        return;
+    }
+
+    // Check the message sent by the iframe
+    if (event.data === 'getURLParams') {
+        // Get the URL parameters from the parent window's URL
+        const params = new URLSearchParams(window.location.search);
+        
+        // Respond to the iframe with the URL parameters
+        event.source.postMessage({
+            type: 'URLParams',
+            params: Object.fromEntries(params.entries())
+        }, event.origin);
+    }
+});
     
 
 
