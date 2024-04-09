@@ -42,6 +42,7 @@ window.addEventListener('message', (event) => {
 
     // Check the message sent by the iframe
     if (event.data === 'getURLParams') {
+	    console.log("gitlog - event.origin = ", event.origin);
         // Get the URL parameters from the parent window's URL
         const params = new URLSearchParams(window.location.search);
         
