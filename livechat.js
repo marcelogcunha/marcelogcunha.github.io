@@ -1,21 +1,5 @@
 chatLoaded = false;
 window.addEventListener("onEmbeddedMessagingReady", () => {
-    console.log("Received the onEmbeddedMessagingReady event…");
-	embeddedservice_bootstrap.prechatAPI.setVisiblePrechatFields({
-   "_firstName": {
-      "value": "Jane",
-      "isEditableByEndUser": false
-    },
-    "_lastName": {
-      "value": "A2",
-      "isEditableByEndUser": false
-    },
-    "_email": {
-      "value": 'test@test.com',
-      "isEditableByEndUser": false
-    }
-  });
-  
     this.chatLoaded = true;
   });
 
