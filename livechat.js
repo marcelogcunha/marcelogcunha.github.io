@@ -6,12 +6,12 @@ window.addEventListener("onEmbeddedMessagingReady", () => {
       "value": "Jane",
       "isEditableByEndUser": false
     },
-    "dropdown_prechat": {
+    "_lastName": {
       "value": "A2",
       "isEditableByEndUser": false
     },
-    "checkbox_prechat": {
-      "value": false,
+    "_email": {
+      "value": 'test@test.com',
       "isEditableByEndUser": false
     }
   });
