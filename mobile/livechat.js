@@ -17,6 +17,9 @@ function initEmbeddedMessaging() {
 		}
 			
 	};
+ function launchChat() {
+    embeddedservice_bootstrap.utilAPI.launchChat();
+  }
 initEmbeddedMessaging();
 // Listen for messages from the iframe
 window.addEventListener('message', (event) => {
