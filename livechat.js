@@ -9,13 +9,13 @@ function initEmbeddedMessaging() {
       embeddedservice_bootstrap.settings.hideChatButtonOnLoad = true;
 
       embeddedservice_bootstrap.init(
-        '00D3N000000HTnt',
-				'Valeo_Live_Chat_External_Github_Pages',
-				'https://valeocare4u--sccp2dev.sandbox.my.site.com/ESWValeoLiveChatExtern1710104728631',
-        {
-          scrt2URL: 'https://valeocare4u--sccp2dev.sandbox.my.salesforce-scrt.com'
-        }
-      );
+				'00D3N000000HTnt',
+				'Valeo_Live_Chat',
+				'https://valeocare4u--sccp2dev.sandbox.my.site.com/ESWValeoLiveChat1708964206329',
+				{
+					scrt2URL: 'https://valeocare4u--sccp2dev.sandbox.my.salesforce-scrt.com'
+				}
+			);
     } catch (err) {
       console.error('Error loading Embedded Messaging: ', err);
     }
