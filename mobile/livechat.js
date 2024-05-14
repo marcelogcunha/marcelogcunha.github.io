@@ -18,9 +18,24 @@ function initEmbeddedMessaging() {
 			
 	};
 initEmbeddedMessaging();
-window.addEventListener("onEmbeddedMessagingReady", () => {
-		console.log("Received the onEmbeddedMessagingReady event.");
-	setTimeout(function() {
-		embeddedservice_bootstrap.utilAPI.launchChat();
-		}, 500);
-	});
+// Listen for messages from the iframe
+window.addEventListener('message', (event) => {
+    // Check the origin of the message to ensure it's coming from a trusted source
+    if (event.origin !== 'https://valeocare4u--sccp2dev.sandbox.my.site.com') {
+	    console.log('github console.log - event.origin = ', event.origin);
+        return;
+    }
+
+    // Check the message sent by the iframe
+    if (event.data === 'getURLParams') {
+	    console.log("gitlog - event.origin = ", event.origin);
+        // Get the URL parameters from the parent window's URL
+        const params = new URLSearchParams(window.location.search);
+        
+        // Respond to the iframe with the URL parameters
+        event.source.postMessage({
+            type: 'URLParams',
+            params: Object.fromEntries(params.entries())
+        }, event.origin);
+    }
+});
