@@ -1,6 +1,13 @@
-chatLoaded = false;
+
 window.addEventListener("onEmbeddedMessagingReady", () => {
-    this.chatLoaded = true;
+    embeddedservice_bootstrap.prechatAPI.setVisiblePrechatFields({
+    // List the pre-chat field names with the value and whether
+    // it's editable in the pre-chat form.
+    "_firstName": {
+      "value": "Jane",
+      "isEditableByEndUser": false
+    }
+  });
   });
 
 function initEmbeddedMessaging() {
