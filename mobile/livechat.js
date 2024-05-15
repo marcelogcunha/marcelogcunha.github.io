@@ -29,7 +29,7 @@ window.addEventListener("onEmbeddedMessagingReady", () => {
 			embeddedservice_bootstrap.utilAPI.hideChatButton();
 		});
 
-  // The JavaScrip API is ready for calls.
+  // The JavaScrip API is ready for calls
 });
 // Listen for messages from the iframe
 window.addEventListener('message', (event) => {
