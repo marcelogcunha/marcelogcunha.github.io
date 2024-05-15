@@ -32,6 +32,7 @@ function launchChat(){
     // Add actions to run whether the chat client launches
     // successfully or not.
   });
+}
 
 //initEmbeddedMessaging();
 
