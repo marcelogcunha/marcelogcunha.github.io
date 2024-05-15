@@ -2,7 +2,7 @@ function initEmbeddedMessaging() {
 		try {
 			embeddedservice_bootstrap.settings.language = 'en_US'; // For example, enter 'en' or 'en-US'
 			embeddedservice_bootstrap.settings.hideChatButtonOnLoad = true;
-			embeddedservice_bootstrap.utilAPI.launchChat();
+			
 
 			embeddedservice_bootstrap.init(
 				'00D3N000000HTnt',
@@ -22,14 +22,14 @@ function initEmbeddedMessaging() {
     embeddedservice_bootstrap.utilAPI.launchChat();
   }
 initEmbeddedMessaging();
+window.addEventListener("onEmbeddedMessagingReady", () => {
+  console.log("Received the onEmbeddedMessagingReady event…");
+	embeddedservice_bootstrap.utilAPI.launchChat();
+
+  // The JavaScrip API is ready for calls.
+});
 // Listen for messages from the iframe
 window.addEventListener('message', (event) => {
-    // Check the origin of the message to ensure it's coming from a trusted source
-    if (event.origin !== 'https://valeocare4u--sccp2dev.sandbox.my.site.com') {
-	    console.log('github console.log - event.origin = ', event.origin);
-        return;
-    }
-
     // Check the message sent by the iframe
     if (event.data === 'getURLParams') {
 	    console.log("gitlog - event.origin = ", event.origin);
