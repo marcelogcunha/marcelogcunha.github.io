@@ -23,10 +23,13 @@ function launchChat() {
 
 window.addEventListener("onEmbeddedMessagingReady", () => {
   console.log("Received the onEmbeddedMessagingReady event…");
-	embeddedservice_bootstrap.utilAPI.launchChat()
+	setTimeout(function() {
+		embeddedservice_bootstrap.utilAPI.launchChat()
 		.then(() => {
 			embeddedservice_bootstrap.utilAPI.hideChatButton();
 		});
+		}, 500);
+	
   // The JavaScrip API is ready for calls
 });
 
