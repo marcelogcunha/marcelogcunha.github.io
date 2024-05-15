@@ -1,12 +1,5 @@
-/*var embeddedservice_bootstrap; // Declare embeddedservice_bootstrap globally
-var script = document.createElement('script');
-script.src = 'https://valeocare4u--sccp2dev.sandbox.my.site.com/ESWValeoLiveChatExtern1710106536106/assets/js/bootstrap.min.js';
-script.onload = initEmbeddedMessaging();
-document.body.appendChild(script);*/
 function initEmbeddedMessaging() {
     try {
-	/*embeddedservice_bootstrap = window.embeddedservice_bootstrap || {}; // Ensure embeddedservice_bootstrap is defined globally
-	    embeddedservice_bootstrap.settings = embeddedservice_bootstrap.settings || {};*/
       embeddedservice_bootstrap.settings.language = 'en_US'; // For example, enter 'en' or 'en-US'
       embeddedservice_bootstrap.settings.hideChatButtonOnLoad = true;
       embeddedservice_bootstrap.init(
@@ -17,7 +10,6 @@ function initEmbeddedMessaging() {
 					scrt2URL: 'https://valeocare4u--sccp2dev.sandbox.my.salesforce-scrt.com'
 				}
 			);
-	    //document.getElementById('launchChatButton').style.display = 'block';
     } catch (err) {
       console.error('Error loading Embedded Messaging: ', err);
     }
@@ -38,9 +30,7 @@ function launchChat() {
 }
 
 
-//initEmbeddedMessaging();
-
-window.addEventListener("onEmbeddedMessagingReady", () => {
+/*window.addEventListener("onEmbeddedMessagingReady", () => {
 	function launchChat() {
 	try {
         	embeddedservice_bootstrap.utilAPI.launchChat();
@@ -48,7 +38,7 @@ window.addEventListener("onEmbeddedMessagingReady", () => {
         	console.error('Error launching chat: ', err);
     	}
 }
-});
+});*/
 
 // Listen for messages from the iframe
 window.addEventListener('message', (event) => {
