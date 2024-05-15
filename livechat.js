@@ -1,3 +1,6 @@
+var script = document.createElement('script');
+script.src = 'https://valeocare4u--sccp2dev.sandbox.my.site.com/ESWValeoLiveChatExtern1710106536106/assets/js/bootstrap.min.js';
+document.body.appendChild(script);
 function initEmbeddedMessaging() {
     try {
       embeddedservice_bootstrap.settings.language = 'en_US'; // For example, enter 'en' or 'en-US'
