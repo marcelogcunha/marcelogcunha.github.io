@@ -4,6 +4,7 @@ script.onload = initEmbeddedMessaging();
 document.body.appendChild(script);
 function initEmbeddedMessaging() {
     try {
+	embeddedservice_bootstrap = window.embeddedservice_bootstrap || {}; // Ensure embeddedservice_bootstrap is defined globally
       embeddedservice_bootstrap.settings.language = 'en_US'; // For example, enter 'en' or 'en-US'
       embeddedservice_bootstrap.settings.hideChatButtonOnLoad = true;
       embeddedservice_bootstrap.init(
@@ -14,6 +15,7 @@ function initEmbeddedMessaging() {
 					scrt2URL: 'https://valeocare4u--sccp2dev.sandbox.my.salesforce-scrt.com'
 				}
 			);
+	    document.getElementById('launchChatButton').style.display = 'block';
     } catch (err) {
       console.error('Error loading Embedded Messaging: ', err);
     }
