@@ -24,10 +24,7 @@ function initEmbeddedMessaging() {
 initEmbeddedMessaging();
 window.addEventListener("onEmbeddedMessagingReady", () => {
   console.log("Received the onEmbeddedMessagingReady event…");
-	embeddedservice_bootstrap.utilAPI.launchChat()
-		.then(() => {
-			embeddedservice_bootstrap.utilAPI.hideChatButton();
-		});
+	embeddedservice_bootstrap.utilAPI.launchChat();
 
   // The JavaScrip API is ready for calls.
 });
