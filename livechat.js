@@ -19,20 +19,20 @@ function initEmbeddedMessaging() {
     }
   };
 
-function triggerChat(){
-	embeddedservice_bootstrap.utilAPI
-  .launchChat()
-  .then(function (success) {
-    // Add actions to run after the chat client launches successfully.
-  })
-  .catch(function (error) {
-    console.log(error);
-  })
-  .finally(function () {
-    // Add actions to run whether the chat client launches
-    // successfully or not.
-  });
+function triggerChat() {
+    embeddedservice_bootstrap.utilAPI.launchChat()
+        .then(function (success) {
+            // Add actions to run after the chat client launches successfully.
+        })
+        .catch(function (error) {
+            console.log(error);
+        })
+        .finally(function () {
+            // Add actions to run whether the chat client launches
+            // successfully or not.
+        });
 }
+
 
 //initEmbeddedMessaging();
 
