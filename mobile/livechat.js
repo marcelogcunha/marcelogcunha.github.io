@@ -16,6 +16,10 @@ function initEmbeddedMessaging() {
 	};
 initEmbeddedMessaging();
 
+function launchChat() {
+        embeddedservice_bootstrap.utilAPI.launchChat();
+}
+
 
 window.addEventListener("onEmbeddedMessagingReady", () => {
   console.log("Received the onEmbeddedMessagingReady event…");
