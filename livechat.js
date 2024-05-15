@@ -19,7 +19,11 @@ function initEmbeddedMessaging() {
   };
 
 function launchChat() {
-	embeddedservice_bootstrap.utilAPI.launchChat();
+	try {
+        	embeddedservice_bootstrap.utilAPI.launchChat();
+    	} catch (err) {
+        	console.error('Error launching chat: ', err);
+    	}
 }
 
 initEmbeddedMessaging();
