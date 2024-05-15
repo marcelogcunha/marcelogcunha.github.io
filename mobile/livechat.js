@@ -14,7 +14,7 @@ function initEmbeddedMessaging() {
 			console.error('Error loading Embedded Messaging: ', err);
 		}
 	};
-//initEmbeddedMessaging();
+initEmbeddedMessaging();
 
 
 window.addEventListener("onEmbeddedMessagingReady", () => {
