@@ -18,17 +18,19 @@ function initEmbeddedMessaging() {
     }
   };
 
-function launchChat() {
+
+
+initEmbeddedMessaging();
+
+window.addEventListener("onEmbeddedMessagingReady", () => {
+	function launchChat() {
 	try {
         	embeddedservice_bootstrap.utilAPI.launchChat();
     	} catch (err) {
         	console.error('Error launching chat: ', err);
     	}
 }
-
-initEmbeddedMessaging();
-
-//window.addEventListener("onEmbeddedMessagingReady", () => {});
+});
 
 // Listen for messages from the iframe
 window.addEventListener('message', (event) => {
