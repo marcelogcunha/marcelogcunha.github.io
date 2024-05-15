@@ -29,17 +29,6 @@ function launchChat() {
         });
 }
 
-
-/*window.addEventListener("onEmbeddedMessagingReady", () => {
-	function launchChat() {
-	try {
-        	embeddedservice_bootstrap.utilAPI.launchChat();
-    	} catch (err) {
-        	console.error('Error launching chat: ', err);
-    	}
-}
-});*/
-
 // Listen for messages from the iframe
 window.addEventListener('message', (event) => {
     // Check the message sent by the iframe
