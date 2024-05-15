@@ -23,7 +23,7 @@ function initEmbeddedMessaging() {
     }
   };
 
-function triggerChat() {
+function launchChat() {
     embeddedservice_bootstrap.utilAPI.launchChat()
         .then(function (success) {
             // Add actions to run after the chat client launches successfully.
