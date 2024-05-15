@@ -1,6 +1,6 @@
     /* .embeddedMessagingConversationButton{ display:none !important;} */
 
-    .embedded-messaging > .embeddedMessagingFrame[class~="isMaximized"]{ bottom:25px !important;}
+    /*.embedded-messaging > .embeddedMessagingFrame[class~="isMaximized"]{ bottom:25px !important;}*/
 
    /* #launchChatButton{
         position: fixed;
