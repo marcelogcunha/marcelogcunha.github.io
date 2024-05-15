@@ -17,7 +17,7 @@ function initEmbeddedMessaging() {
 					scrt2URL: 'https://valeocare4u--sccp2dev.sandbox.my.salesforce-scrt.com'
 				}
 			);
-	    document.getElementById('launchChatButton').style.display = 'block';
+	    //document.getElementById('launchChatButton').style.display = 'block';
     } catch (err) {
       console.error('Error loading Embedded Messaging: ', err);
     }
