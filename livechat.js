@@ -19,7 +19,7 @@ function initEmbeddedMessaging() {
     }
   };
 
-function launchChat(){
+function triggerChat(){
 	embeddedservice_bootstrap.utilAPI
   .launchChat()
   .then(function (success) {
