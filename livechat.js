@@ -1,8 +1,8 @@
-var embeddedservice_bootstrap; // Declare embeddedservice_bootstrap globally
+/*var embeddedservice_bootstrap; // Declare embeddedservice_bootstrap globally
 var script = document.createElement('script');
 script.src = 'https://valeocare4u--sccp2dev.sandbox.my.site.com/ESWValeoLiveChatExtern1710106536106/assets/js/bootstrap.min.js';
 script.onload = initEmbeddedMessaging();
-document.body.appendChild(script);
+document.body.appendChild(script);*/
 function initEmbeddedMessaging() {
     try {
 	embeddedservice_bootstrap = window.embeddedservice_bootstrap || {}; // Ensure embeddedservice_bootstrap is defined globally
