@@ -1,7 +1,7 @@
 
 function initEmbeddedMessaging() {
 		try {
-			embeddedservice_bootstrap.settings.language = 'en_US'; // For example, enter 'en' or 'en-US'
+			embeddedservice_bootstrap.settings.language = 'fr'; // For example, enter 'en' or 'en-US'
 			embeddedservice_bootstrap.init(
 				'00D3N000000HTnt',
 				'Valeo_Live_Chat_External_Github_Pages_mobile',
