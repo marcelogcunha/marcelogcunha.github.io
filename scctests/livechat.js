@@ -4,7 +4,7 @@ function initEmbeddedMessaging() {
         embeddedservice_bootstrap.settings.hideChatButtonOnLoad = true;
         embeddedservice_bootstrap.init(
             '00DG5000002Zry4',
-            'Valeo_Live_Chat_External_Github_Pages_mobile',
+            'Valeo_Live_Chat',
             'https://valeocare4u--scctests.sandbox.my.site.com/ESWValeoLiveChat1708964206329', {
                 scrt2URL: 'https://valeocare4u--scctests.sandbox.my.salesforce-scrt.com'
             }
