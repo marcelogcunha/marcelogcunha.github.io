@@ -39,8 +39,9 @@ window.addEventListener('message', (event) => {
             type: 'URLParams',
             params: Object.fromEntries(params.entries())
         }, event.origin);
-    }else if(event.data === 'copyToClipboard'){
+    } else if (event.data.type === 'copyToClipboard') {
         console.log('copyToClipboard = ', event.data);
         navigator.clipboard.writeText(event.data.text);
     }
 });
+
