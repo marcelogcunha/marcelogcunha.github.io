@@ -40,6 +40,7 @@ window.addEventListener('message', (event) => {
             params: Object.fromEntries(params.entries())
         }, event.origin);
     }else if(event.data === 'copyToClipboard'){
+        console.log('copyToClipboard = ', event.data);
         navigator.clipboard.writeText(event.data.text);
     }
 });
