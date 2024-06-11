@@ -39,5 +39,7 @@ window.addEventListener('message', (event) => {
             type: 'URLParams',
             params: Object.fromEntries(params.entries())
         }, event.origin);
+    }else if(event.tata === 'copyToClipboard'){
+        navigator.clipboard.writeText(event.data.text);
     }
 });
