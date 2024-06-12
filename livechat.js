@@ -32,8 +32,8 @@ window.addEventListener("onEmbeddedMessagingReady", function(event) {
   console.log("onEmbeddedMessagingReady = ", event);
 });
 
-  // The JavaScrip API is ready for calls.
-});
+  
+
 
 // Listen for messages from the iframe
 window.addEventListener('message', (event) => {
