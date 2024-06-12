@@ -30,7 +30,7 @@ function launchChat() {
 
 window.addEventListener("onEmbeddedMessagingReady", function(event) {
   console.log("onEmbeddedMessagingReady = ", event);
-}
+});
 
   // The JavaScrip API is ready for calls.
 });
