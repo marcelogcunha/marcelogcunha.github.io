@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+    <title>Chat lindo</title>
+  </head>
+
+  <body>
+    <script type='text/javascript'>
+	function initEmbeddedMessaging() {
+		try {
+			embeddedservice_bootstrap.settings.language = 'pt_BR'; // For example, enter 'en' or 'en-US'
+
+			embeddedservice_bootstrap.init(
+				'00DWV0000003709',
+				'Livechat_Embedded_Deployment',
+				'https://wiprocom-1e7-dev-ed.develop.my.site.com/ESWLivechatEmbeddedDepl1713869269682',
+				{
+					scrt2URL: 'https://wiprocom-1e7-dev-ed.develop.my.salesforce-scrt.com'
+				}
+			);
+		} catch (err) {
+			console.error('Error loading Embedded Messaging: ', err);
+		}
+	};
+</script>
+<script type='text/javascript' src='https://wiprocom-1e7-dev-ed.develop.my.site.com/ESWLivechatEmbeddedDepl1713869269682/assets/js/bootstrap.min.js' onload='initEmbeddedMessaging()'></script>
+
+  </body>
+</html>
