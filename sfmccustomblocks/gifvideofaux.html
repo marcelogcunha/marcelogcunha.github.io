@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Block with Two Inputs</title>
+    <style>
+        .input-container {
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <div id="app">
+        <div class="input-container">
+            <label for="input1">Input 1:</label>
+            <input type="text" id="input1" placeholder="Enter first value">
+        </div>
+        <div class="input-container">
+            <label for="input2">Input 2:</label>
+            <input type="text" id="input2" placeholder="Enter second value">
+        </div>
+        <button id="save">Save</button>
+        <div id="result"></div>
+    </div>
+
+    <script src="blocksdk.js"></script>
+    <script>
+        const sdk = new BlockSDK(); // Initialize the BlockSDK
+        
+        document.getElementById('save').addEventListener('click', function () {
+            const input1 = document.getElementById('input1').value;
+            const input2 = document.getElementById('input2').value;
+            
+            // Generate the HTML content
+            const htmlContent = `<p>${input1} ${input2}</p>`;
+            
+            // Display the result in the page (for preview purposes)
+            document.getElementById('result').innerHTML = htmlContent;
+            
+            // Set content to the editor using the SDK
+            sdk.setContent(htmlContent);
+        });
+    </script>
+</body>
+</html>
